@@ -9,6 +9,7 @@
 *.pyo
 __pycache__/
 *.egg-info/
+build/
 
 # Backups
 *~
