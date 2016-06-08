@@ -61,7 +61,7 @@ Use `woobi-postback` to reference the postback path. Note that `woobi.django.vie
 
 ### Templating
 
-```jinja2
+```jinja
 {% load woobi %}
 
 <!DOCTYPE html>
