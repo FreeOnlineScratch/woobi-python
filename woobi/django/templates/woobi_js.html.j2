@@ -1,0 +1,22 @@
+{% block woobi_js %}
+    <script type="text/javascript" src="{{ woobi_js_uri }}"></script>
+    <script>
+        woobi.config.appId = '{{ woobi_appId }}';
+        woobi.config.clientId = '{{ woobi_clientId }}';
+        {% if woobi_customParams %}
+            woobi.config.customParams = '{{ woobi_customParams }}';
+        {% endif %}
+        woobi.settings.view = $.extend({}, woobi.settings.view, {{ woobi_view }});
+        woobi.showPlayer();
+        {% block woobi_debug_js %}
+            {% if not debug %}
+                woobi.checkInventory(function (n) {
+                    console.log("checkInventory returned: ", n);
+                });
+                woobi.config.listener.onError = function () {
+                    console.log("woobi onError callback:", arguments);
+                };
+            {% endif %}
+        {% endblock %}
+    </script>
+{% endblock %}
