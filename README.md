@@ -1,4 +1,4 @@
-# Woobi API
+# [Woobi](http://woobi.com/) API
 
 ```python
 from woobi import api as woobi_api
