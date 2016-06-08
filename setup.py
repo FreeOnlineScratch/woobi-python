@@ -1,13 +1,14 @@
 from distutils.core import setup
 
 setup(
-    name='woobi',
+    name='woobi-python',
+    packages=['woobi', 'woobi.django'],
     version='0.0.1',
     author='Andrew Udvare',
     author_email='audvare@gmail.com',
     maintainer='Andrew Udvare',
     maintainer_email='audvare@gmail.com',
-    url='https://github.com/Tatsh/woobi-python',
+    url='https://github.com/FreeOnlineScratch/woobi-python',
     license='LICENSE.txt',
     description='Woobi API tool and Django module.',
     long_description='Woobi API tool and Django module.',
