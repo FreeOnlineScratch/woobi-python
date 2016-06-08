@@ -45,7 +45,7 @@ WOOBI_APP_ID = 'something'
 WOOBI_APP_SECRET_KEY = 'hash value'
 ```
 
-See [ settings.py`](/blob/master/woobi/django/settings.py)
+See [`settings.py`](woobi/django/settings.py)
 
 ### URLs
 
